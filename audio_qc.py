@@ -4,10 +4,7 @@ import soundfile as sf
 
 folder = "."
 
-# audio, sr = sf.read("loud_test.wav")
-# print(np.max(np.abs(audio)))
-
-
+# Loudness Checker
 for name in os.listdir(folder):
     if name.endswith(".wav"):
         audio, sr = sf.read(name)
